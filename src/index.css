@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dancing+Script:wght@400..700&display=swap");
+
+@import "tailwindcss";
+@theme {
+  --font-display: "Bricolage Grotesque", sans-serif;
+
+  --screen-sm: 380px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+
+  --color-primary: #2563eb; /* Main blue */
+  --color-primary-hover: #1e40af; /* Darker blue 
+ /* Secondary (for subtle buttons, outlines) */
+  --color-secondary: #e2e8f0; /* Muted gray background */
+  --color-secondary-hover: #cbd5e1; /* Darker gray hover */
+
+  /* Accent (icons, highlights, badges) */
+  --color-accent: #f59e0b; /* Amber highlight */
+  --color-accent-hover: #d97706; /* Darker amber for hover */
+  /* Text */
+  --color-heading: #0f172a; /* Headings */
+  --color-paragraph: #475569; /* Body text */
+  --color-link: #2563eb; /* Links */
+  --color-link-hover: #1e40af; /* Link hover */
+  /* Borders / lines */
+  --color-border: #e2e8f0;
+  --color-card: #ffffff;
+  --color-footer-bg: #0f172a;
+  /* ... */
+
+  /* SECTION PADDING */
+  --padding-section-py: 3rem;
+  --padding-section-py-sm: 4rem;
+  --padding-section-py-md: 4.5rem;
+  --padding-section-py-lg: 5rem;
+  --padding-section-px: 4rem;
+  --padding-section-px-sm: 1.5rem;
+  --padding-section-px-md: 2rem;
+  --padding-section-px-lg: 2.5rem;
+
+  /* CONTAINER PADDING */
+  --padding-nav-py: 1.5rem;
+  --padding-navsmal-py: 1.1rem;
+  --padding-nav-px: 2rem;
+  --padding-container-py: 1rem;
+  --padding-container-py-sm: 2.5rem;
+  --padding-container-py-md: 3rem;
+  --padding-container-py-lg: 3rem;
+
+  --padding-container-px: 1.5rem;
+  --padding-container-px-sm: 1.5rem;
+  --padding-container-px-md: 2rem;
+  --padding-container-px-lg: 2rem;
+}
+body {
+  background-color: #f8fafc;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: none;
+}
+@layer components {
+  /* Horizontal Scroll Container */
+  .panel {
+    width: 100%;
+    height: 100vh;
+  }
+}
